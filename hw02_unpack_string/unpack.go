@@ -30,7 +30,7 @@ func Unpack(str string) (string, error) {
 			}
 
 			if n == 0 {
-				var strRes = res.String()
+				strRes := res.String()
 				strRes = strRes[:len(strRes)-1]
 				res.Reset()
 				res.WriteString(strRes)
