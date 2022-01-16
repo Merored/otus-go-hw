@@ -38,9 +38,9 @@ func Top10(s string) []string {
 		return wordsData[first].Count > wordsData[second].Count
 	})
 
-	len := int(math.Min(10, float64(len(wordsData))))
-	result := make([]string, len)
-	for i := 0; i < len; i++ {
+	resultLen := int(math.Min(10, float64(len(wordsData))))
+	result := make([]string, resultLen)
+	for i := 0; i < resultLen; i++ {
 		result[i] = wordsData[i].Word
 	}
 
